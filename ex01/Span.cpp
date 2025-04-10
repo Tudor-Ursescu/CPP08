@@ -6,7 +6,7 @@
 /*   By: turescu <turescu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 19:40:09 by turescu           #+#    #+#             */
-/*   Updated: 2025/04/09 20:41:46 by turescu          ###   ########.fr       */
+/*   Updated: 2025/04/10 14:18:04 by turescu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ Span::Span() : N(0) {
 
 Span::Span(unsigned int N) : N(N) {
     numbers.reserve(N);
-    std::cout << "Parameter constuctor called" << std::endl;
+    std::cout << YELLOW << "Parameter constuctor called" << RESET << std::endl;
 }
 
 Span::Span(const Span &other) : N(other.N) {
     this->numbers = other.numbers;
-    std::cout << "Copy constructor called" << std::endl;
+    std::cout << YELLOW << "Copy constructor called" << RESET << std::endl;
 }
 
 Span & Span::operator=(const Span &other) {
@@ -31,7 +31,7 @@ Span & Span::operator=(const Span &other) {
        this->N = other.N;
        this->numbers = other.numbers;
     }
-    std::cout << "Copy assignmnet operator called" << std::endl;
+    std::cout << YELLOW << "Copy assignmnet operator called" << RESET << std::endl;
     return *this;
 }
 
