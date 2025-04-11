@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: turescu <turescu@student.42.fr>            +#+  +:+       +#+         #
+#    By: tursescu <tursescu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/10 15:29:22 by turescu           #+#    #+#              #
-#    Updated: 2025/04/10 15:37:00 by turescu          ###   ########.fr        #
+#    Updated: 2025/04/11 17:09:54 by tursescu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = main.cpp .cpp
+SRC = main.cpp
 CXX = @c++
 RM = @rm -f
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
